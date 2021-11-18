@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="product-info-row">
+                <div class="product">
+                    <label for="select">Product</label>
+                    <select name="products" id="select">
+                        <option value="T-Shirt">T-Shirt</option>
+                        <option value="Shirt">Shirt</option>
+                        <option value="Hairdryer">Hair Dryer</option>
+                        <option value="Trimmer">Trimmer</option>
+                    </select>
+                </div>
+
+                <div class="price">
+                    <label for="price">Price</label>
+                    <span id="price">500</span>
+                </div>
+
+                <div class="quantity">
+                    <label for="quantity">Qty</label>
+                    <input type="text" id="quantity" value="0">
+                </div>
+
+                <div class="total">
+                    <label for="total">Total</label>
+                    <span id="total">0</span>
+                </div>
+
+                <div class="add-btn">
+                    <button type="button" onclick="" id="submit">Add Product</button>
+                </div>
+            </div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="contentHere"></tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <th>Subtotal</th>
+                    <th id="subtotal">0</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

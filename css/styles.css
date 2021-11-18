@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.product-info-row{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.product, .price, .quantity, .total{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 0px 65px;
+}
+
+.add-btn{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+table{
+    margin: auto;
+    width: 90%;
+}
+
+label{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+#del-button{
+    color: #000;
+    border-style: none;
+    background-color: #fff;
+    outline: none;
+}
